@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Book</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+
+<body>
+    <!-- !HEADER -->
+    <header>
+
+        <!-- *NAVBAR -->
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container-fluid">
+
+                <!-- LOGO -->
+                <a class="navbar-brand" href="#"><img class="logo" src="./img/duck.png" width="40" alt="duck logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- NAVBAR LINKS -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./bonus_index.html">Catalogo Libri</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Anagrafica Utenti</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Storico Prestiti</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Help</a>
+                        </li>
+                    </ul>
+
+                    <!-- RICERCA -->
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Cerca..." aria-label="Search" />
+                        <button class="btn btn-outline-light" type="submit">Cerca</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1 class="my-4">Nome Libro<span class="mx-4 badge text-bg-success">Disponibile</span> </h1>
+            <form action="">
+
+                <div class="row">
+                    <div class="col-sm-12 col-lg-6 my-2">
+                        <label for="Nome_autore" class="form-label">Nome Autore</label>
+                        <input type="text" id="Nome_autore" class="form-control"
+                            placeholder="Inserisci il nome dell'autore" value="Nome Autore">
+
+                    </div>
+                    <div class="col-sm-12 col-lg-6 my-2">
+                        <label for="Cognome_autore" class="form-label">Cognome Autore</label>
+                        <input type="text" id="Cognome_autore" class="form-control"
+                            placeholder="Inserisci il cognome dell'autore" value="Cognome Autore">
+                    </div>
+                    <div class="col-12 my-2">
+                        <label for="Nome_libro" class="form-label">Titolo</label>
+                        <input type="text" id="Nome_libro" class="form-control"
+                            placeholder="Inserisci il titolo del libro" aria-describedby="nome_titolo_help"
+                            value="Titolo del libro">
+                        <div id="nome_titolo_help" class="form-text">
+                            Titolo versione italiana
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-4 my-2">
+                        <label class="form-label" for="genere_list">Genere</label>
+                        <select class="form-select" id="genere_list">
+                            <option selected>Avventura</option>
+                            <option value="2">Azione</option>
+                            <option value="3">Giallo</option>
+                            <option value="4">Giallo</option>
+                            <option value="5">Giallo</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-12 col-lg-4 my-2">
+                        <label class="form-label" for="pub_year" class="form-control">Anno di Pubblicazione</label>
+                        <input type="number" id="pub_year" class="form-control" placeholder="Inserisci l'anno"
+                            value="1988">
+                    </div>
+                    <div class="col-sm-12 col-lg-4 my-2">
+                        <label class="form-label" for="isbn_code">ISBN#</label>
+                        <input type="number" id="isbn_code" class="form-control" placeholder="Inserisci il codice ISBN#"
+                            value="9781234567897">
+                    </div>
+
+                </div>
+                <hr class="my-4">
+                <div class="col-12">
+                    <label class="form-label" for="note">Note</label>
+                    <textarea class="form-control" id="note" rows="3"
+                        placeholder="Inserisci eventuali note sul libro"></textarea>
+                </div>
+                <div class="col-12">
+                    <div class="form-check my-3">
+                        <input class="form-check-input" type="checkbox" value="" id="digital_version">
+                        <label class="form-check-label" for="digital_version">
+                            Disponibile anche in Digitale </label>
+                    </div>
+                    <button type="submit" class="btn btn-success ">Salva modifiche</button>
+                    <button type="submit" class="btn btn-danger ">Cancella libro</button>
+                    <button type="reset" class="btn btn-warning ">Reset dati</button>
+                </div>
+            </form>
+
+
+        </div>
+
+    </main>
+
+
+</body>
+
+</html>
